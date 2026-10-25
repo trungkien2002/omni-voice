@@ -2,7 +2,7 @@
 
 ## Trạng thái hiện tại
 
-- 2026-10-25: đã tạo repository GitHub riêng tư https://github.com/trungkien2002/omni-voice; chuẩn bị đẩy mã nguồn và thư viện giọng lên main.
+- 2026-10-25: đã đẩy mã nguồn và thư viện giọng lên main tại repository GitHub riêng tư https://github.com/trungkien2002/omni-voice.
 
 - Đã triển khai ứng dụng Omni Voice riêng, giữ `run.bat` và hoàn thành bộ cài EXE + BIN offline trong `release/`, gồm model và runtime.
 - Đã thay nhiều chương bằng nhiều giọng/vai thoại, giữ giao diện người dùng đã thiết kế. Lời dẫn/phần nghe lại ghép cùng các vai; sinh WAV/MP3 thật qua UI trên GPU đã qua.
@@ -77,3 +77,6 @@
 - Khởi tạo Git/main, tạo repo riêng tư theo yêu cầu đưa folder lên GitHub.
 - Bổ sung .gitignore cho backup, release.rar, môi trường và khóa bí mật; giữ nguyên tệp cục bộ. Danh sách trước commit có 336 tệp, không có tệp vượt 100 MB; kiểm tra mẫu token/private key trong nguồn không có kết quả.
 - Chỉ thay đổi lưu trữ/tài liệu, không sửa runtime và không chạy lại kiểm thử sinh giọng.
+
+- Push đầu tiên thành công; main theo dõi origin/main. Đối chiếu commit trên remote sau push để xác nhận đồng bộ.
+
