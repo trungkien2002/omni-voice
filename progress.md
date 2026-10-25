@@ -2,7 +2,7 @@
 
 ## Trạng thái hiện tại
 
-- 2026-10-25: đã đẩy mã nguồn và thư viện giọng lên main tại repository GitHub riêng tư https://github.com/trungkien2002/omni-voice.
+- 2026-10-25: đã đẩy mã nguồn và thư viện giọng lên main tại repository GitHub công khai https://github.com/trungkien2002/omni-voice.
 
 - Đã triển khai ứng dụng Omni Voice riêng, giữ `run.bat` và hoàn thành bộ cài EXE + BIN offline trong `release/`, gồm model và runtime.
 - Đã thay nhiều chương bằng nhiều giọng/vai thoại, giữ giao diện người dùng đã thiết kế. Lời dẫn/phần nghe lại ghép cùng các vai; sinh WAV/MP3 thật qua UI trên GPU đã qua.
@@ -79,4 +79,11 @@
 - Chỉ thay đổi lưu trữ/tài liệu, không sửa runtime và không chạy lại kiểm thử sinh giọng.
 
 - Push đầu tiên thành công; main theo dõi origin/main. Đối chiếu commit trên remote sau push để xác nhận đồng bộ.
+
+
+## 2026-10-25 — Kiểm tra bí mật và công khai repository
+
+- Kiểm tra tên/nội dung 336 tệp và lịch sử hai commit: không phát hiện API key, token, password, private key hay URL chứa credential. Kiểm tra văn bản giọng mẫu không có mẫu thông tin tài khoản riêng tư; chưa nghe toàn bộ 82 WAV.
+- Xác nhận session.json không được track; config/resources.json chỉ chứa đường dẫn model tương đối. Tên openai/whisper là model ID, không phải khóa API.
+- Đã chuyển GitHub sang public theo yêu cầu; API xác nhận private=false. Không thay đổi mã ứng dụng.
 

@@ -89,6 +89,9 @@
 
 ## Lưu trữ GitHub (2026-10-25)
 
-- Người dùng yêu cầu đưa dự án lên GitHub. Repository riêng tư: https://github.com/trungkien2002/omni-voice ; nhánh chính main.
+- Người dùng yêu cầu đưa dự án lên GitHub. Repository công khai: https://github.com/trungkien2002/omni-voice ; nhánh chính main.
 - Git lưu mã nguồn, tài liệu, script đóng gói/kiểm thử và thư viện giọng. Loại trừ .venv, model, release/, release.rar, _backups, _qa, outputs, session cá nhân và tệp bí mật; các tệp này vẫn giữ trên máy.
 - Clone repository chưa đủ để chạy offline: cần chuẩn bị dependency và model theo README; bộ cài đầy đủ vẫn ở máy cục bộ.
+
+- 2026-10-25: theo yêu cầu người dùng, kiểm tra 336 tệp được Git theo dõi và hai commit trước công khai; không phát hiện mẫu API key/token/password/private key. Session cá nhân, môi trường, model, output và backup không có trong Git. Có 82 WAV mẫu và metadata/phụ đề; chưa nghe toàn bộ WAV. Đây là kiểm tra bí mật để công khai, không phải kiểm toán toàn diện.
+
